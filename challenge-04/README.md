@@ -7,15 +7,41 @@ um único parâmetro como argumento. Essa função deve retornar `true` se o
 equivalente booleano para o valor passado no argumento for `true`, ou `false`
 para o contrário.
 */
-?
+
+var isTruthy;
+if(1) { isTruthy = true; } else { isTruthy = false; }
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
-?
+
+if( '' ) { isTruthy = true; } else { isTruthy = false; }
+
+if( '0' ) { isTruthy = true; } else { isTruthy = false; }
+
+if( undefined ) { isTruthy = true; } else { isTruthy = false; }
+
+if( null ) { isTruthy = true; } else { isTruthy = false; }
+
+if( NaN ) { isTruthy = true; } else { isTruthy = false; }
+
+if( -0 ) { isTruthy = true; } else { isTruthy = false; }
+
+
 
 /*
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
 */
-?
+
+if( 2 ) { isTruthy = true; } else { isTruthy = false; }
+if( 3 ) { isTruthy = true; } else { isTruthy = false; }
+if( 4 ) { isTruthy = true; } else { isTruthy = false; }
+if( 5 ) { isTruthy = true; } else { isTruthy = false; }
+if( 6 ) { isTruthy = true; } else { isTruthy = false; }
+if( 7 ) { isTruthy = true; } else { isTruthy = false; }
+if( 8 ) { isTruthy = true; } else { isTruthy = false; }
+if( 9 ) { isTruthy = true; } else { isTruthy = false; }
+if( 10 ) { isTruthy = true; } else { isTruthy = false; }
+if( 11 ) { isTruthy = true; } else { isTruthy = false; }
+
 
 /*
 Declare uma variável chamada `carro`, atribuindo à ela um objeto com as
@@ -29,13 +55,26 @@ seguintes propriedades (os valores devem ser do tipo mostrado abaixo):
 - `assentos` - Number - cinco por padrão
 - `quantidadePessoas` - Number - zero por padrão
 */
-?
+
+var carro = {
+  marca: 'Wolksvagem',
+  modelo: 'Gol',
+  placa: 'ABC 1234',
+  ano: 2000,
+  cor: 'branco',
+  quantasPortas: 4,
+  assentos: 5,
+  quantidadedePessoas: 2 
+};
 
 /*
 Crie um método chamado `mudarCor` que mude a cor do carro conforme a cor
 passado por parâmetro.
 */
-?
+
+carro.mudarCor = function(mudarCor) {
+  
+};
 
 /*
 Crie um método chamado `obterCor`, que retorne a cor do carro.
