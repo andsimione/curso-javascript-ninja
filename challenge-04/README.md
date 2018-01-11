@@ -111,7 +111,7 @@ carro.obterMarcaModelo = function() {
 /*
 Crie um método que irá adicionar pessoas no carro. Esse método terá as
 seguintes características:
-- Ele deverá receber por parâmetro o número de pessoas entrarão no carro. Esse
+- Ele deverá receber por parâmetro o número de pessoas entrarão no carro. Essecarro
 número não precisa encher o carro, você poderá acrescentar as pessoas aos
 poucos.
 - O método deve retornar a frase: "Já temos [X] pessoas no carro!"
@@ -124,7 +124,8 @@ mostrar quantos assentos ainda podem ser ocupados, com a frase:
 - Se couber somente mais uma pessoa, mostrar a palavra "pessoa" no retorno
 citado acima, no lugar de "pessoas".
 */
-?
+
+
 
 /*
 Agora vamos verificar algumas informações do carro. Para as respostas abaixo,
