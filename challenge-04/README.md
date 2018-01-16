@@ -8,8 +8,15 @@ equivalente booleano para o valor passado no argumento for `true`, ou `false`
 para o contrário.
 */
 
-var isTruthy;
-if(1) { isTruthy = true; } else { isTruthy = false; }
+var isTruthy = function(param) {
+  if(param) {
+    return true;
+  }
+  return false;
+};
+
+var isTruthy = function(param) {
+return param ? true : false; // Ternario.
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
 
@@ -31,16 +38,17 @@ if( -0 ) { isTruthy = true; } else { isTruthy = false; }
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
 */
 
-if( 2 ) { isTruthy = true; } else { isTruthy = false; }
-if( 3 ) { isTruthy = true; } else { isTruthy = false; }
-if( 4 ) { isTruthy = true; } else { isTruthy = false; }
-if( 5 ) { isTruthy = true; } else { isTruthy = false; }
-if( 6 ) { isTruthy = true; } else { isTruthy = false; }
-if( 7 ) { isTruthy = true; } else { isTruthy = false; }
-if( 8 ) { isTruthy = true; } else { isTruthy = false; }
-if( 9 ) { isTruthy = true; } else { isTruthy = false; }
-if( 10 ) { isTruthy = true; } else { isTruthy = false; }
-if( 11 ) { isTruthy = true; } else { isTruthy = false; }
+
+isTruthy(1);
+isTruthy('Andre');
+isTruthy([]);
+isTruthy({});
+isTruthy(function() {});
+isTruthy('Curso JS Ninja');
+isTruthy(20 * 30);
+isTruthy(10 + 10);
+isTruthy([1, 2, 3]);
+isTruthy({a: 1, b: 2 });
 
 
 /*
@@ -105,7 +113,7 @@ Para retornar os valores de marca e modelo, utilize os métodos criados.
 */
 
 carro.obterMarcaModelo = function() {
-  return 'Esse carro é da marca ' + carro.marca + ' modelo ' + carro.modelo + '!'; 
+  return 'Esse carro é da marca ' + carro.obterMarca + ' modelo ' + carro.obterModelo + '!'; 
 };
 
 /*
@@ -135,22 +143,28 @@ retornar algum valor.
 
 Qual a cor atual do carro?
 */
-?
+
+carro.obterCor();
 
 // Mude a cor do carro para vermelho.
-?
+
+carro.mudarCor( 'Vermelho' );
 
 // E agora, qual a cor do carro?
-?
+
+carro.obterCor();
 
 // Mude a cor do carro para verde musgo.
-?
+
+carro.mudarCor( 'Verde Musgo' );
 
 // E agora, qual a cor do carro?
-?
+
+carro.obterCor();
 
 // Qual a marca e modelo do carro?
-?
+
+carro.obterMarcaModelo();
 
 // Adicione 2 pessoas no carro.
 ?
