@@ -63,12 +63,22 @@ propriedades:
 os livros.
 */
 
+function book() {
+  return {
+    livro1: 'O Hobbit',
+    livro2: 'O Evento',
+    livro3: 'Código'
+  }
+}
+
+var nomeLivro = book();
 
 
 /*
 Usando a função criada acima, imprima o objeto com todos os livros.
 */
-// ?
+
+nomeLivro
 
 /*
 Ainda com a função acima, imprima a quantidade de páginas de um livro qualquer,
